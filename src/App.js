@@ -26,12 +26,12 @@ function App() {
   }
 
   const nextHandler = () => {
+    sliderRef.current.removeEventListener('transitionend', tempFunc);
     if(index=== 3) {
       sliderRef.current.addEventListener('transitionend', tempFunc);
     }
-    if(index !== 3) {
-      sliderRef.current.style.transition = `0.2s`;
-      sliderRef.current.removeEventListener('transitionend', tempFunc);
+    else if(index !== 3) {
+      sliderRef.current.style.transition = `0.1s`;
     }
     index += 1;
     
