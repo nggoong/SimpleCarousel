@@ -21,16 +21,16 @@
   width:500px;
   height: 80%;
   border-radius: 30px;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 .carousel-slider {
   display:flex;
   align-items: center;
   background:green;
-  width:500%;
+  width:600%;
   height:100%;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(-500px, 0, 0);
   transition: transform 0.1s;
 }
 
